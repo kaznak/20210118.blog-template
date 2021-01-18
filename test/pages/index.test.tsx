@@ -6,7 +6,6 @@ const { props } = getStaticProps()
 
 describe('Home page', () => {
   it('matches snapshot', () => {
-
     const { asFragment } = render(<Index {...props} />, {})
     expect(asFragment()).toMatchSnapshot()
   })
