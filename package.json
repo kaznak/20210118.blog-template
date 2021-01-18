@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "next dev",
+    "dev:watch": "next-remote-watch ./posts",
     "build": "next build",
     "start": "next start",
     "type-check": "tsc --pretty --noEmit",
