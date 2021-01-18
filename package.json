@@ -24,7 +24,10 @@
     "*.@(ts|tsx|js|jsx|json|html|css|md)": "prettier"
   },
   "dependencies": {
+    "gray-matter": "^4.0.2",
     "next": "latest",
+    "next-mdx-remote": "^2.1.1",
+    "next-remote-watch": "^0.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
