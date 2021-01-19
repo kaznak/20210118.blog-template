@@ -59,7 +59,7 @@ export function getPostFromSlug(
 function getPosts(options?: Partial<GetPostsOptions>) {
   return getPostFilePaths(options).map((filePath) => getPost(filePath, options))
 }
-export const posts = postFilePaths.map(getPost)
+export const posts = postFilePaths.map((basename) => getPost(basename))
 
 function getSlugs(options?: Partial<GetPostsOptions>) {
   return getPostFilePaths(options).map(baseNameToSlug)
