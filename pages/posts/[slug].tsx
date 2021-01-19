@@ -1,42 +1,31 @@
-import hydrate from 'next-mdx-remote/hydrate'
-import renderToString from 'next-mdx-remote/render-to-string'
-// import dynamic from 'next/dynamic'
-import Head from 'next/head'
-import Link from '../../component/atoms/Link'
 import { getPostFromSlug, slugs } from '../../lib/mdxUtils'
 
-// Custom components/renderers to pass to MDX.
-// Since the MDX files aren't loaded by webpack, they have no knowledge of how
-// to handle import statements. Instead, you must include components in scope
-// here.
-const components = {
-  // It also works with dynamically-imported components, which is especially
-  // useful for conditionally loading components for certain routes.
-  // See the notes in README.md for more details.
-  // TestComponent: dynamic(() => import('../../components/TestComponent')),
-  Head,
-}
+import Container from '@material-ui/core/Container'
+import Box from '@material-ui/core/Box'
+import Typography from '@material-ui/core/Typography'
+import Link from '../../component/atoms/Link'
 
-// Optionally pass remark/rehype plugins
-const mdxOptions = { remarkPlugins: [], rehypePlugins: [] }
+import hydrate from 'next-mdx-remote/hydrate'
+import renderToString from 'next-mdx-remote/render-to-string'
+import { components, mdxOptions } from '../../lib/mdxMapping'
 
 export default function PostPage({ source, frontMatter }) {
   const content = hydrate(source, { components })
   return (
-    <>
-      <header>
-        <nav>
-          <Link href="/">
-            <a>👈 Go back home</a>
-          </Link>
-        </nav>
-      </header>
-      <div>
-        <h1>{frontMatter.title}</h1>
-        {frontMatter.description && <p>{frontMatter.description}</p>}
-      </div>
-      <main>{content}</main>
-    </>
+    <Container>
+      <Box component="header">
+        <Box component="nav">
+          <Link href="/">👈 Go back home</Link>
+        </Box>
+      </Box>
+      <Box>
+        <Typography variant="h1">{frontMatter.title}</Typography>
+        {frontMatter.description && (
+          <Typography>{frontMatter.description}</Typography>
+        )}
+      </Box>
+      <Box component="main">{content}</Box>
+    </Container>
   )
 }
 
