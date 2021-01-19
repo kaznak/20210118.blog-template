@@ -56,12 +56,12 @@ export function getPostFromSlug(
   return getPost(`${slug}.mdx`, options)
 }
 
-function getPosts(options?: Partial<GetPostsOptions>) {
+export function getPosts(options?: Partial<GetPostsOptions>) {
   return getPostFilePaths(options).map((filePath) => getPost(filePath, options))
 }
 export const posts = postFilePaths.map((basename) => getPost(basename))
 
-function getSlugs(options?: Partial<GetPostsOptions>) {
+export function getSlugs(options?: Partial<GetPostsOptions>) {
   return getPostFilePaths(options).map(baseNameToSlug)
 }
 export const slugs = postFilePaths.map(baseNameToSlug)
