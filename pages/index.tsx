@@ -15,7 +15,7 @@ export function Index({ posts }) {
       </Typography>
       <List>
         {posts.map((post) => (
-          <ListItem key={post.filePath}>
+          <ListItem key={post.slug}>
             <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
               {post.data.title}
             </Link>
