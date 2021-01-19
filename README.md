@@ -11,6 +11,10 @@
 - [material-ui/examples/nextjs](https://github.com/mui-org/material-ui/tree/master/examples/nextjs)
 - [Server Rendering](https://material-ui.com/guides/server-rendering/)
 - [Custom `Document`](https://nextjs.org/docs/advanced-features/custom-document)
+- [Material UI MDX Example](https://github.com/VdustR/example-material-ui-mdx)
+- [react-syntax-highlighter/react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+- [React Syntax Highlight Sample Page](https://k8shiro.github.io/ReactCompareCodeHighlighter/)
+  - [k8shiro/ReactCompareCodeHighlighter](https://github.com/k8shiro/ReactCompareCodeHighlighter)
 
 ## Specifications
 
