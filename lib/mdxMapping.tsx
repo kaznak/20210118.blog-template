@@ -29,8 +29,11 @@ export const components = {
   blockquote: (props: PaperProps) => (
     <Paper style={{ borderLeft: '4px solid grey', padding: 8 }} {...props} />
   ),
+  // @ts-ignore
   ul: (props: TypographyProps) => <Typography {...props} component="ul" />,
+  // @ts-ignore
   ol: (props: TypographyProps) => <Typography {...props} component="ol" />,
+  // @ts-ignore
   li: (props: TypographyProps) => <Typography {...props} component="li" />,
   table: (props) => <Table {...props} />,
   thead: (props) => <TableHead {...props} />,
