@@ -39,3 +39,5 @@ export function getPosts(options: Partial<GetPostsOptions> = {}) {
     }
   })
 }
+
+export const posts = getPosts()
