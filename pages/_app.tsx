@@ -13,7 +13,7 @@ import { mUiTheme } from '../lib/materialUiUtils'
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    // Remove the server-side injected CSS.
+    // Remove the CSS that Material UI injected.
     const jssStyles = document.querySelector('#jss-server-side')
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles)
