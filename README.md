@@ -9,7 +9,10 @@
 - [@material-ui/icons](https://material-ui.com/components/icons/)
 - [fontsource](https://github.com/fontsource/fontsource)
 - [material-ui/examples/nextjs](https://github.com/mui-org/material-ui/tree/master/examples/nextjs)
+- [Server Rendering](https://material-ui.com/guides/server-rendering/)
+- [Custom `Document`](https://nextjs.org/docs/advanced-features/custom-document)
 
 ## Specifications
 
+- [MetaExtensions @ WHATWG Wiki!](https://wiki.whatwg.org/wiki/MetaExtensions)
 - [HTML Living Standard / 4.2.5 The meta element / theme-color](https://html.spec.whatwg.org/multipage/semantics.html#meta-theme-color)
