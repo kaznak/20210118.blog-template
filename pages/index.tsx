@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 
-import { getPosts } from '../lib/mdxUtils'
+import { posts } from '../lib/mdxUtils'
 
 export function Index({ posts }) {
   return (
@@ -27,7 +27,7 @@ export function Index({ posts }) {
 }
 
 export function getStaticProps() {
-  return { props: { posts: getPosts() } }
+  return { props: { posts } }
 }
 
 export default Index
