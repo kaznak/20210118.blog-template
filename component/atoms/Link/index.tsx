@@ -9,7 +9,7 @@ export interface LinkProps extends NextLinkProps {
 
 export function Link(props: LinkProps) {
   return (
-    <NextLink {...props}>
+    <NextLink {...props} passHref>
       <MuiLink {...props.muiLinkProps}>{props.children}</MuiLink>
     </NextLink>
   )
