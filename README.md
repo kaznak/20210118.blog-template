@@ -1,5 +1,11 @@
 # Blog Template
 
+## feature
+
+- NextJS with typescript eslint jest
+- Material UI and its SSR
+- MDX and mdx-remote
+
 ## Libraries
 
 - [next.js/examples/with-typescript-eslint-jest](https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest)
