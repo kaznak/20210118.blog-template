@@ -24,7 +24,7 @@ export default function PostPage({ source, frontMatter }) {
           <Typography>{frontMatter.description}</Typography>
         )}
       </Box>
-      <Box component="main">{content}</Box>
+      <Box py={10} component="main">{content}</Box>
     </Container>
   )
 }
